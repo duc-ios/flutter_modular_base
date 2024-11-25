@@ -11,9 +11,9 @@ abstract class LoggerModule {
         settings: TalkerSettings(
           useConsoleLogs: kDebugMode,
           colors: {
-            TalkerLogType.debug: AnsiPen()..green(),
-            TalkerLogType.warning: AnsiPen()..yellow(bold: true),
-            TalkerLogType.error: AnsiPen()..red(bold: true)
+            TalkerLogType.debug.key: AnsiPen()..green(),
+            TalkerLogType.warning.key: AnsiPen()..yellow(bold: true),
+            TalkerLogType.error.key: AnsiPen()..red(bold: true)
           },
         ),
       );
